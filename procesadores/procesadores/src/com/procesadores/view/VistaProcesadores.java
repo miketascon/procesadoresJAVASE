@@ -227,7 +227,7 @@ public class VistaProcesadores extends javax.swing.JFrame {
         // TODO add your handling code here:
           try {
             Date fecha = null;
-            SimpleDateFormat df = new SimpleDateFormat("MMM d, yyyy");
+            SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
             String dateStr = txtFecha.getText();
             try {
                 fecha = new Date(df.parse(dateStr).getTime());
@@ -265,7 +265,7 @@ public class VistaProcesadores extends javax.swing.JFrame {
             txtID.setText(tabla.getValueAt(fila, 0).toString());
             txtMarca.setText(tabla.getValueAt(fila, 1).toString());
             txtModelo.setText(tabla.getValueAt(fila, 2).toString());
-            txtFecha.setText("MMM d, YYYY".toString());
+            txtFecha.setText("dd/MM/yyyy".toString());
             txtPrecio.setText(tabla.getValueAt(fila, 4).toString());
             CheckEntregado.setText(tabla.getValueAt(fila, 5).toString());
             JOptionPane.showMessageDialog(null, "Por favor Volver a escribir la fecha de Venta"
@@ -299,7 +299,7 @@ public class VistaProcesadores extends javax.swing.JFrame {
         // TODO add your handling code here:
         try {
             Date fecha=null;
-            SimpleDateFormat df=new SimpleDateFormat("MMM d, YYYY");
+            SimpleDateFormat df=new SimpleDateFormat("dd/MM/yyyy");
             String dateStr=txtFecha.getText();
             try {
                 fecha=new Date(df.parse(dateStr).getTime());
